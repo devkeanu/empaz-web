@@ -1,0 +1,59 @@
+/* ============================================================
+   FARVERDE — design tokens
+   Aesthetic: institutional editorial. Paper + ink + one ember.
+   ============================================================ */
+
+:root {
+  /* --- ground & ink ------------------------------------------------ */
+  --paper:      #F2F0EB;   /* page ground, warm off-white            */
+  --paper-2:    #FBFAF7;   /* raised surface / cards                 */
+  --paper-3:    #E9E6DF;   /* sunken wells, table stripes            */
+  --coal:       #14130F;   /* dark band ground                       */
+  --coal-2:     #1F1D18;   /* raised surface on dark                 */
+
+  --ink:        #14130F;   /* primary text                           */
+  --ink-2:      #4A473F;   /* secondary                              */
+  --ink-3:      #8A867B;   /* muted / captions                       */
+  --ink-inv:    #F5F3EE;   /* text on coal                           */
+  --ink-inv-2:  #A9A498;
+
+  /* --- rules -------------------------------------------------------- */
+  --rule:       #DFDBD1;
+  --rule-2:     #CBC5B7;
+  --rule-inv:   #302D26;
+
+  /* --- accent ------------------------------------------------------- */
+  --ember:      #DC4B1E;
+  --ember-ink:  #B23A14;
+  --ember-soft: #F9E9E1;
+
+  /* --- market ------------------------------------------------------- */
+  --gain:       #1E7A4B;
+  --gain-soft:  #E2F0E8;
+  --loss:       #C23A25;
+  --loss-soft:  #F8E6E2;
+
+  /* --- type --------------------------------------------------------- */
+  --display: "Archivo", "Helvetica Neue", Helvetica, sans-serif;
+  --sans:    "Instrument Sans", "Helvetica Neue", Helvetica, sans-serif;
+  --mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* --- geometry ------------------------------------------------------ */
+  --gutter: 28px;
+  --maxw:   1360px;
+  --r-sm:   6px;
+  --r:      12px;
+  --r-lg:   20px;
+  --r-pill: 999px;
+
+  /* --- elevation ------------------------------------------------------ */
+  --lift-1: 0 1px 2px rgba(20,19,15,.05);
+  --lift-2: 0 2px 4px rgba(20,19,15,.04), 0 12px 28px -14px rgba(20,19,15,.22);
+  --lift-3: 0 4px 10px rgba(20,19,15,.05), 0 28px 60px -24px rgba(20,19,15,.30);
+
+  /* --- motion ---------------------------------------------------------- */
+  --ease: cubic-bezier(.22,.61,.36,1);
+  --ease-out: cubic-bezier(.16,1,.3,1);
+}
+
+@media (max-width: 900px) { :root { --gutter: 18px; } }
